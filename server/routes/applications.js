@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('../db');
 const { authenticate, authorize } = require('../middleware/auth');
+const { calculateOverallCandidateScore } = require('../services/candidateScore');
 
 const router = express.Router();
 
@@ -23,19 +24,40 @@ router.get('/my', authenticate, (req, res) => {
   });
 });
 
-// Calculate score (mock AI)
-function calculateScore(userId, vacancyId) {
-  // Mock scoring logic
-  return Math.floor(Math.random() * 100);
-}
-
 // Update scores
-router.put('/:id/score', authenticate, authorize(['hospital_admin']), (req, res) => {
-  const score = calculateScore(req.params.id, req.body.vacancy_id);
-  db.run(`UPDATE applications SET score = ? WHERE id = ?`, [score, req.params.id], (err) => {
-    if (err) return res.status(500).json({ error: err.message });
-    res.json({ score });
-  });
+router.put('/:id/score', authenticate, authorize(['hospital_admin']), async (req, res) => {
+  try {
+    const application = await new Promise((resolve, reject) => {
+      db.get(`SELECT * FROM applications WHERE id = ?`, [req.params.id], (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve(row);
+      });
+    });
+
+    if (!application) {
+      res.status(404).json({ error: 'Application not found' });
+      return;
+    }
+
+    const scoreResult = await calculateOverallCandidateScore({
+      userId: application.user_id,
+      vacancyId: req.body.vacancy_id || application.vacancy_id,
+    });
+
+    db.run(
+      `UPDATE applications SET score = ? WHERE id = ?`,
+      [scoreResult.overallScore, req.params.id],
+      (err) => {
+        if (err) return res.status(500).json({ error: err.message });
+        res.json(scoreResult);
+      }
+    );
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 module.exports = router;

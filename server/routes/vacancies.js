@@ -6,10 +6,17 @@ const router = express.Router();
 
 // Get all vacancies
 router.get('/', (req, res) => {
-  db.all(`SELECT * FROM vacancies WHERE status = 'active'`, [], (err, rows) => {
-    if (err) return res.status(500).json({ error: err.message });
-    res.json(rows);
-  });
+  db.all(
+    `SELECT vacancies.*, hospitals.name AS hospital_name, hospitals.region AS hospital_region, hospitals.address AS hospital_address
+     FROM vacancies
+     LEFT JOIN hospitals ON hospitals.id = vacancies.hospital_id
+     WHERE vacancies.status = 'active'`,
+    [],
+    (err, rows) => {
+      if (err) return res.status(500).json({ error: err.message });
+      res.json(rows);
+    }
+  );
 });
 
 // Create vacancy (hospital admin)
