@@ -1,0 +1,55 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="boardBlue" x1="54" y1="48" x2="258" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AAAD3"/>
+      <stop offset="1" stop-color="#3F6F9E"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="84" y1="64" x2="192" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EE"/>
+      <stop offset="1" stop-color="#F4EBDC"/>
+    </linearGradient>
+    <linearGradient id="clip" x1="122" y1="14" x2="177" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9C37C"/>
+      <stop offset="1" stop-color="#E89643"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="209" y1="87" x2="258" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5FBFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#D7E8F5" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="242" y1="168" x2="283" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5C07A"/>
+      <stop offset="1" stop-color="#D98C43"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="182" y1="76" x2="264" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AAAD3"/>
+      <stop offset="1" stop-color="#4A78A3"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="119" y1="160" x2="184" y2="231" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A72"/>
+      <stop offset="1" stop-color="#E85641"/>
+    </linearGradient>
+    <filter id="shadow" x="28" y="10" width="264" height="284" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#204F7A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="58" y="34" width="152" height="210" rx="22" fill="url(#boardBlue)"/>
+    <rect x="74" y="52" width="120" height="176" rx="16" fill="url(#paper)"/>
+
+    <path d="M132 18C124 18 118 24 118 32V44H109C96 44 86 54 86 67V70C86 83 96 93 109 93H176C189 93 199 83 199 70V67C199 54 189 44 176 44H167V32C167 24 160 18 153 18H132Z" fill="url(#clip)"/>
+    <rect x="132" y="36" width="21" height="15" rx="7.5" fill="#D78334"/>
+
+    <rect x="99" y="92" width="62" height="8" rx="4" fill="#CFC9C1"/>
+    <rect x="99" y="118" width="58" height="8" rx="4" fill="#CFC9C1"/>
+
+    <path d="M137.5 151C149.3 151 157.9 159 160.5 168.2C163.1 159 171.7 151 183.5 151C197.2 151 207 161 207 174.1C207 199.3 177.5 211.5 160.5 227C143.5 211.5 114 199.3 114 174.1C114 161 123.8 151 137.5 151Z" fill="url(#heart)"/>
+    <path d="M128 183H145L151 171L160 195L168 180H187" stroke="#FFF5EA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="225" cy="121" r="37" fill="url(#ring)"/>
+    <circle cx="225" cy="121" r="24.5" fill="url(#glass)"/>
+    <path d="M214 102C207 108 203 116 203 126" stroke="white" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M248 145L276 173" stroke="url(#handle)" stroke-width="16" stroke-linecap="round"/>
+    <rect x="257" y="168" width="27" height="55" rx="12" transform="rotate(45 257 168)" fill="url(#handle)"/>
+  </g>
+</svg>

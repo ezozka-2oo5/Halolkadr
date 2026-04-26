@@ -1,0 +1,67 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="serviceClip">
+      <circle cx="160" cy="160" r="140"/>
+    </clipPath>
+    <linearGradient id="serviceBg" x1="24" y1="20" x2="294" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF8FD"/>
+      <stop offset="1" stop-color="#B7DBE8"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="34" y1="204" x2="294" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7EFF5"/>
+      <stop offset="1" stop-color="#8BC9DB"/>
+    </linearGradient>
+    <linearGradient id="scrub" x1="24" y1="72" x2="130" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#317A96"/>
+      <stop offset="1" stop-color="#184C60"/>
+    </linearGradient>
+    <linearGradient id="mop" x1="136" y1="88" x2="180" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C5D7DE"/>
+      <stop offset="1" stop-color="#738A95"/>
+    </linearGradient>
+    <linearGradient id="mopHead" x1="150" y1="200" x2="201" y2="247" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#62D9F0"/>
+      <stop offset="1" stop-color="#239BC2"/>
+    </linearGradient>
+    <filter id="serviceShadow" x="8" y="8" width="304" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#3A8096" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#serviceShadow)">
+    <circle cx="160" cy="160" r="140" fill="white"/>
+  </g>
+
+  <g clip-path="url(#serviceClip)">
+    <rect x="20" y="20" width="280" height="280" rx="140" fill="url(#serviceBg)"/>
+    <rect x="20" y="198" width="280" height="102" fill="url(#floor)"/>
+    <path d="M20 212C73 199 132 205 188 215C232 223 268 228 300 223V300H20V212Z" fill="#A9D7E4" fill-opacity="0.55"/>
+
+    <rect x="226" y="78" width="63" height="72" rx="10" fill="#E2EAF0"/>
+    <rect x="232" y="86" width="51" height="58" rx="8" fill="#C5D5DF"/>
+    <rect x="220" y="112" width="76" height="74" rx="10" fill="#D5E1E8"/>
+    <circle cx="238" cy="186" r="9" fill="#7E99AA"/>
+    <circle cx="278" cy="186" r="9" fill="#7E99AA"/>
+
+    <path d="M28 72H116V198H28V72Z" fill="#CDE2EA" fill-opacity="0.45"/>
+    <rect x="42" y="84" width="22" height="88" rx="11" fill="#E5F2F7" fill-opacity="0.8"/>
+
+    <path d="M56 84C56 69 67 58 82 58H95V178H56V84Z" fill="url(#scrub)"/>
+    <rect x="49" y="178" width="60" height="20" rx="10" fill="#1A4F63"/>
+    <path d="M58 198H86V258H58V198Z" fill="#245C73"/>
+    <path d="M84 198H112V258H84V198Z" fill="#1F5367"/>
+    <path d="M50 254C50 248 55 244 61 244H83V266H61C55 266 50 261 50 254Z" fill="#F9F9F7"/>
+    <path d="M78 254C78 248 83 244 89 244H111V266H89C83 266 78 261 78 254Z" fill="#F9F9F7"/>
+
+    <path d="M170 92L179 95L147 219L138 216L170 92Z" fill="url(#mop)"/>
+    <path d="M132 213C149 202 175 203 196 214L187 239H136L132 213Z" fill="url(#mopHead)"/>
+    <path d="M126 228C140 218 175 218 197 229" stroke="#7DE7FA" stroke-width="5" stroke-linecap="round"/>
+    <path d="M132 236C148 228 177 228 190 238" stroke="#1E90B6" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M153 210C164 205 175 205 184 211" stroke="#4FCBE6" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M128 172C145 157 166 158 179 174" stroke="#E8F8FD" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="214" cy="148" r="5" fill="#EAFBFF" opacity="0.75"/>
+    <circle cx="201" cy="132" r="3" fill="#EAFBFF" opacity="0.75"/>
+  </g>
+</svg>

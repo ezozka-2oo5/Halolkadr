@@ -1,0 +1,42 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="64" y1="24" x2="240" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E4A1"/>
+      <stop offset="0.35" stop-color="#D4AF5A"/>
+      <stop offset="0.7" stop-color="#A87920"/>
+      <stop offset="1" stop-color="#F6E1A3"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="34" y1="52" x2="286" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAE8B9"/>
+      <stop offset="0.5" stop-color="#C59538"/>
+      <stop offset="1" stop-color="#8C6115"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="320" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#8B5E12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <path d="M160 24C169.941 24 178 32.059 178 42V92C178 101.941 169.941 110 160 110C150.059 110 142 101.941 142 92V42C142 32.059 150.059 24 160 24Z" fill="url(#gold)"/>
+    <circle cx="160" cy="30" r="18" fill="url(#goldSoft)"/>
+
+    <path d="M145 82C122 59 87 48 36 55C53 67 72 74 94 78C72 83 51 93 32 110C75 112 112 101 141 82H145Z" fill="url(#goldSoft)"/>
+    <path d="M175 82C198 59 233 48 284 55C267 67 248 74 226 78C248 83 269 93 288 110C245 112 208 101 179 82H175Z" fill="url(#goldSoft)"/>
+
+    <path d="M108 91C118 109 133 122 152 128" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M212 91C202 109 187 122 168 128" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M160 110V282" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M160 112C129 123 120 155 145 173C168 190 169 207 151 220C132 234 135 260 160 275" stroke="url(#gold)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M160 112C191 123 200 155 175 173C152 190 151 207 169 220C188 234 185 260 160 275" stroke="url(#gold)" stroke-width="11" stroke-linecap="round"/>
+
+    <path d="M72 86C59 116 56 145 64 174" stroke="#6D4A12" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="57" cy="184" r="15" stroke="#6D4A12" stroke-width="6"/>
+
+    <path d="M248 86C261 113 264 144 258 178" stroke="#6D4A12" stroke-width="6" stroke-linecap="round"/>
+    <path d="M258 178V230" stroke="#C9A35D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M282 118V252" stroke="#C9A35D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M258 230C265 233 275 233 282 230" stroke="#6D4A12" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

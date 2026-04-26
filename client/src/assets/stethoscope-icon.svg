@@ -1,0 +1,41 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tube" x1="80" y1="98" x2="240" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FE8FF"/>
+      <stop offset="0.45" stop-color="#49C7FF"/>
+      <stop offset="1" stop-color="#137DFF"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="82" y1="28" x2="224" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F8FF"/>
+      <stop offset="0.45" stop-color="#C8D3F8"/>
+      <stop offset="1" stop-color="#7380A5"/>
+    </linearGradient>
+    <radialGradient id="head" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188 96) rotate(130) scale(44 44)">
+      <stop stop-color="#F6F9FF"/>
+      <stop offset="0.45" stop-color="#C9D5FA"/>
+      <stop offset="1" stop-color="#66739A"/>
+    </radialGradient>
+    <filter id="drop" x="18" y="14" width="284" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#1E4ED8" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#drop)">
+    <path d="M101 40C84 52 74 71 74 95C74 118 84 135 102 148" stroke="url(#metal)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M219 40C236 52 246 71 246 95C246 118 236 135 218 148" stroke="url(#metal)" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M88 24C93 24 98 29 98 35C98 41 93 46 88 46C82 46 78 41 78 35C78 29 82 24 88 24Z" fill="#4B567B"/>
+    <path d="M232 24C238 24 242 29 242 35C242 41 238 46 232 46C226 46 222 41 222 35C222 29 226 24 232 24Z" fill="#4B567B"/>
+
+    <path d="M104 144C80 146 57 164 57 196C57 233 86 257 121 257C160 257 184 231 184 195V126" stroke="url(#tube)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M216 144C240 146 263 164 263 196C263 233 234 257 199 257C160 257 136 231 136 195V126" stroke="url(#tube)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M108 144C108 171 126 190 160 190C194 190 212 171 212 144" stroke="url(#tube)" stroke-width="14" stroke-linecap="round"/>
+
+    <circle cx="188" cy="96" r="28" fill="url(#head)"/>
+    <circle cx="188" cy="96" r="17" fill="#DDE6FF"/>
+    <path d="M188 68V124" stroke="#7B86A9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M160 96H216" stroke="#7B86A9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M172 116L160 126" stroke="#7B86A9" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

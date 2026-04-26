@@ -1,0 +1,91 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="techClip">
+      <circle cx="160" cy="160" r="140"/>
+    </clipPath>
+    <linearGradient id="techBg" x1="30" y1="24" x2="286" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FBFD"/>
+      <stop offset="1" stop-color="#DCEAF4"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="190" y1="84" x2="278" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9E3EA"/>
+      <stop offset="1" stop-color="#7E99AC"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="206" y1="102" x2="258" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#263847"/>
+      <stop offset="1" stop-color="#0F1B27"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="50" y1="118" x2="140" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3EAF0"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="96" y1="132" x2="176" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDFEFF"/>
+      <stop offset="1" stop-color="#DCE6EF"/>
+    </linearGradient>
+    <linearGradient id="worker" x1="186" y1="116" x2="256" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56697A"/>
+      <stop offset="1" stop-color="#2A3743"/>
+    </linearGradient>
+    <linearGradient id="helmet" x1="207" y1="91" x2="246" y2="135" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD84E"/>
+      <stop offset="1" stop-color="#E7A90B"/>
+    </linearGradient>
+    <linearGradient id="skinTech" x1="88" y1="92" x2="220" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D2BE"/>
+      <stop offset="1" stop-color="#DEAD8E"/>
+    </linearGradient>
+    <filter id="techShadow" x="8" y="8" width="304" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#5C7B95" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#techShadow)">
+    <circle cx="160" cy="160" r="140" fill="white"/>
+  </g>
+
+  <g clip-path="url(#techClip)">
+    <rect x="20" y="20" width="280" height="280" rx="140" fill="url(#techBg)"/>
+    <rect x="22" y="230" width="276" height="74" fill="#E4EDF3"/>
+
+    <rect x="196" y="90" width="80" height="130" rx="8" fill="url(#frame)"/>
+    <rect x="209" y="104" width="54" height="104" rx="4" fill="url(#panel)"/>
+    <circle cx="248" cy="119" r="4" fill="#FFCD4D"/>
+    <circle cx="248" cy="136" r="4" fill="#65D26E"/>
+    <circle cx="248" cy="153" r="4" fill="#FF7E72"/>
+    <rect x="220" y="176" width="16" height="5" rx="2.5" fill="#8EACC0"/>
+    <rect x="220" y="188" width="20" height="5" rx="2.5" fill="#8EACC0"/>
+
+    <rect x="26" y="166" width="66" height="68" rx="10" fill="#263846"/>
+    <rect x="32" y="173" width="54" height="56" rx="8" fill="#16242F"/>
+    <circle cx="53" cy="204" r="8" fill="#8CCBFF"/>
+    <circle cx="66" cy="194" r="6" fill="#F79F3B"/>
+    <path d="M47 217L63 202L76 212" stroke="#79C4FF" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="116" y="192" width="46" height="34" rx="6" fill="#EFF4F8"/>
+    <path d="M122 216C132 202 146 200 156 212" stroke="#6AA6DB" stroke-width="4" stroke-linecap="round"/>
+    <rect x="122" y="202" width="14" height="6" rx="3" fill="#D0DCE5"/>
+    <rect x="138" y="196" width="12" height="12" rx="2" fill="#E8B04C"/>
+
+    <circle cx="73" cy="102" r="22" fill="url(#skinTech)"/>
+    <path d="M57 98C58 83 67 74 81 74C92 74 100 83 100 97C92 91 83 88 74 88C68 88 63 91 57 98Z" fill="#44323B"/>
+    <path d="M48 214C51 173 60 129 84 128C106 127 120 145 127 170L136 220L48 214Z" fill="url(#coat)"/>
+    <path d="M72 128L92 152L109 129" stroke="#C6D5DF" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="124" cy="116" r="20" fill="url(#skinTech)"/>
+    <path d="M109 112C110 98 119 91 131 91C142 91 149 99 149 112C143 106 135 103 126 103C120 103 115 106 109 112Z" fill="#49363D"/>
+    <path d="M94 217C98 175 106 142 126 142C148 142 163 161 170 187L178 229L94 217Z" fill="url(#shirt)"/>
+    <path d="M138 176L174 166" stroke="#E1AF93" stroke-width="6" stroke-linecap="round"/>
+    <path d="M139 145L123 162L110 146" stroke="#CBD9E3" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="227" cy="112" r="18" fill="url(#skinTech)"/>
+    <path d="M205 107C208 96 216 90 227 90C239 90 247 97 248 111L205 107Z" fill="url(#helmet)"/>
+    <path d="M248 112C248 99 239 90 227 90C214 90 205 99 205 112V120H248V112Z" fill="url(#helmet)"/>
+    <path d="M188 228C188 180 198 136 226 136C253 136 270 164 274 203L280 258H188V228Z" fill="url(#worker)"/>
+    <path d="M205 164L198 198" stroke="#E1AF93" stroke-width="6" stroke-linecap="round"/>
+    <path d="M198 198L214 208" stroke="#C8D4DE" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M171 174C183 168 195 168 205 174" stroke="#F2B48F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M162 220C178 232 211 234 232 222" stroke="#C9D7E0" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

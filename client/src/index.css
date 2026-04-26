@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #e0f2fe;
+  color: #0f172a;
+}
+
+body.dark {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.hero-emblem-stage {
+  perspective: 1200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes hero-emblem-rotate {
+  0% {
+    transform: rotateX(8deg) rotateY(0deg) scale(1);
+  }
+  25% {
+    transform: rotateX(8deg) rotateY(90deg) scale(1.02);
+  }
+  50% {
+    transform: rotateX(8deg) rotateY(180deg) scale(1);
+  }
+  75% {
+    transform: rotateX(8deg) rotateY(270deg) scale(1.02);
+  }
+  100% {
+    transform: rotateX(8deg) rotateY(360deg) scale(1);
+  }
+}
+
+.hero-emblem-spin {
+  animation: hero-emblem-rotate 18s linear infinite;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 12px 18px rgba(30, 78, 216, 0.18));
+  will-change: transform;
+}
+
+.hero-emblem-image {
+  width: 108px;
+  height: 108px;
+}
